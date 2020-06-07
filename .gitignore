@@ -29,3 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+**/repository
+**/*.tar.gz
+**/target
+**/.idea
+**/*.iml
