@@ -10,8 +10,8 @@
 	</parent>
 	<groupId>com.venkat</groupId>
 	<artifactId>k8s-with-java</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>k8s-with-java</name>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot with Kubernetes</description>
 
 	<properties>
