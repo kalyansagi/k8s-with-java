@@ -1,0 +1,9 @@
+FROM debian:9-slim
+
+COPY target/k8s-with-java-0.0.1.war /root
+COPY myjre /root/myjre
+
+EXPOSE 8080 5005
+WORKDIR /root
+
+CMD ["./myjre/bin/java", "-jar", "k8s-with-java-0.0.1.war"]

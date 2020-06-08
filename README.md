@@ -17,3 +17,6 @@ mvn package -Pjib
 
 ## Instead of building docker daemon, we can directly build the image to docker registry
 mvn jib:build -Pjib
+
+
+## Build docker image with minimal
