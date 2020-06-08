@@ -14,3 +14,6 @@ docker container run -p 8080:8080 venkat/k8swithjava
 ## Building docker images using Jib
 Add the Jib plugin in profiles section in POM.xml and run the below
 mvn package -Pjib
+
+## Instead of building docker daemon, we can directly build the image to docker registry
+mvn jib:build -Pjib
