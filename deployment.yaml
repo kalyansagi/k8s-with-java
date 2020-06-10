@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8swithjava
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8swithjava
+  template:
+    metadata:
+      labels:
+        app: k8swithjava
+    spec:
+      containers:
+        - name: k8swithjava
+          image: kalyansagi/k8swithjava
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              name: "http"
+            - containerPort: 5005
+              name: "debug"
