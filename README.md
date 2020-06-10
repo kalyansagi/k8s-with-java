@@ -53,3 +53,6 @@ or
 
 `kubectl get svc,deployment,pods`
 
+## Delete all these resources
+
+`kubectl delete deployment/greeting svc/greeting`
